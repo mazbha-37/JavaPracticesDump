@@ -27,7 +27,7 @@ public class Main {
                 case '3' -> balance = balance + doDeposit();
                 case '4' -> {
                         isActive=false;
-                        System.out.println("Exiting from the bank");
+                        System.out.println("Exiting from the bank...");
                 }
                 default ->{
                     isActive=false;
