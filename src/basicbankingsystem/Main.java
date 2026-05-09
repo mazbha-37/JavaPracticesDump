@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     static Scanner input = new Scanner(System.in);
+    static double balance = 10.99;
     public static void main(String[] args) {
         int choices;
         double balance = 10.99;
@@ -57,7 +58,9 @@ public class Main {
             System.out.println("Deposit amount can't be negative:\n");
             return 0;
         }
-        else{
+
+
+         else{
             return depositAmount;
         }
 
@@ -70,6 +73,10 @@ public class Main {
 
         if (withdrawAmount<0){
             System.out.println("You can't do this:");
+            return 0;
+        }
+        else if (withdrawAmount>balance) {
+            System.out.println("INSUFFICIENT FUND");
             return 0;
         }
         else{
